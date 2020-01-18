@@ -1,0 +1,6 @@
+---
+
+- name: install curl
+  yum:
+    name: curl
+    state: latest

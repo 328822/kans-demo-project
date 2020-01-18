@@ -1,0 +1,6 @@
+---
+
+- name: install nslookup
+  yum:
+    name: bind-utils  
+    state: latest 

@@ -1,0 +1,12 @@
+---
+
+- hosts: all
+  become: yes
+  roles: 
+    - java
+    - telnet
+    - nslookup
+    - curl
+    - apache
+    - tomcat
+    - mysql

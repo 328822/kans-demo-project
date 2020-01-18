@@ -1,0 +1,13 @@
+---
+
+- name: setup apache webserver
+  yum:
+    name: httpd
+    state: latest
+
+- name: start apache service
+  systemd:
+    name: httpd
+    enabled: yes
+    masked: no
+    state: started

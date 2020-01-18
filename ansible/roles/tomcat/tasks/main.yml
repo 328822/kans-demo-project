@@ -1,0 +1,13 @@
+---
+
+- name: setup tomcat server
+  yum:
+    name: tomcat
+    state: latest
+
+- name: start tomcat service
+  systemd:
+    name: tomcat
+    enabled: yes
+    masked: no
+    state: started

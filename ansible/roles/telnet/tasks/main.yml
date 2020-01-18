@@ -1,0 +1,6 @@
+---
+
+- name: install telnet
+  yum:
+    name: telnet
+    state: latest
